@@ -128,7 +128,7 @@ const projects = () => {
               img={masthhmovies}
               summary="Delve into my captivating movies app with optimized search experience,seamless navigation and dynamic content display. Highlighted this project in list for its excellence—I employed React js with meticulous documentation ensuring top-notch performance ,
               I showcase the art of modern web development, "
-              link="https://moengage-app.vercel.app/"
+              link="https://masthmovies-ca.vercel.app/"
               type="Featuring latest movies"
               github="https://github.com/Chandru779/moengage_app"
             />
