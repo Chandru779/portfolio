@@ -5,7 +5,7 @@ import Link from "next/link";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
-import Project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import maptag from "../../public/images/projects/maptag.jpg";
 import masthhmovies from "../../public/images/projects/masthmovie.png";
 import portfolio from "../../public/images/projects/portfolio.png";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -135,9 +135,9 @@ const projects = () => {
 
             <Project
               title="MapTag"
-              img={Project1}
+              img={maptag}
               summary="MapTag is a map app where users mark spots they like. The more tags in an area, the hotter it looks on the map,This helps people find busy places easily businesses can use this to boost their visibility.
-The app keeps user info safe and improves based on feedback  "
+                        The app keeps user info safe and improves based on feedback  "
               link="/"
               type="Featured Project"
               github="/"
