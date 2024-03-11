@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import { FaRegFilePdf } from "react-icons/fa";
 import {
   DribbbleIcon,
   GithubIcon,
@@ -42,36 +43,45 @@ const CustomLink = ({ href, title, setShowModel, className = "" }) => {
 
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
-
   const [showModel, setShowModel] = useState(false);
 
   return (
     <>
       <header
         className="w-full px-10 lg:px-32 py-6 font-medium flex items-center justify-between
-    dark:text-light"
+        dark:text-light"
       >
-        <nav className="hidden lg:block">
-          <CustomLink
-            setShowModel={setShowModel}
-            href="/"
-            title="Home"
-            className="mr-4"
-          />
-          <CustomLink
-            setShowModel={setShowModel}
-            href="/about"
-            title="About"
-            className="mx-4"
-          />
-          <CustomLink
-            setShowModel={setShowModel}
-            href="/projects"
-            title="Projects"
-            className="mx-4"
-          />
-          {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
-        </nav>
+        <div className="flex items-center">
+          <nav className="hidden lg:block">
+            <CustomLink
+              setShowModel={setShowModel}
+              href="/"
+              title="Home"
+              className="mr-4"
+            />
+            <CustomLink
+              setShowModel={setShowModel}
+              href="/about"
+              title="About"
+              className="mx-4"
+            />
+            <CustomLink
+              setShowModel={setShowModel}
+              href="/projects"
+              title="Projects"
+              className="mx-4"
+            />
+            {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
+          </nav>
+
+          <Link
+            href="/dummy.pdf"
+            target="_blank"
+            className="text-sm md:ml-6 px-2 py-1 font-semibold rounded-lg flex items-center bg-gradient-to-br from-dark to-light"
+          >
+            Resume <FaRegFilePdf className="ml-2" />
+          </Link>
+        </div>
         <Logo />
         <nav className="hidden lg:flex items-center justify-center flex-wrap">
           <motion.a
@@ -193,7 +203,10 @@ const NavBar = () => {
               </motion.a>
 
               <button
-                onClick={() => {setMode(mode === "light" ? "dark" : "light"),setShowModel(!showModel)}}
+                onClick={() => {
+                  setMode(mode === "light" ? "dark" : "light"),
+                    setShowModel(!showModel);
+                }}
                 className={`ml-3 flex items-center justify-center rounded-full p-1 ${
                   mode == "light" ? "bg-dark text-light" : "bg-light text-dark"
                 }`}
