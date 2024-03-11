@@ -138,9 +138,9 @@ const projects = () => {
               img={maptag}
               summary="MapTag is a map app where users mark spots they like. The more tags in an area, the hotter it looks on the map,This helps people find busy places easily businesses can use this to boost their visibility.
                         The app keeps user info safe and improves based on feedback  "
-              link="/"
-              type="Featured Project"
-              github="/"
+              link="https://maptag-app.vercel.app/"
+              type="Location based Service"
+              github="https://github.com/zakriti-official/maptag"
             />
 
             
