@@ -50,7 +50,7 @@ export default function Home() {
               </Link>
               <Link
                 href="mailto:chanduangadi779@gmail.com"
-                className="flex items-center ml-8 font-semibold text-lg capitalize bg-light  border-dark border-2 rounded-lg p-2 px-6  text-dark dark:text-light hover:scale-95 transition-all "
+                className="flex items-center ml-8 font-semibold text-lg capitalize bg-light  border-dark border-2 rounded-lg p-2 px-6  text-dark dark:text-dark hover:scale-95 transition-all "
               >
                 Contact <MdMailOutline  className={"w-6 h-6 ml-2"}/>
               </Link>
