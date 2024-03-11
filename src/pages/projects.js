@@ -114,7 +114,7 @@ const projects = () => {
 
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10">
             <Project
-              title="My Portfolio"
+              title="Portfolio"
               img={portfolio}
               summary="Explore my innovative portfolio, where Next.js powers lightning-fast performance, Tailwind CSS ensures sleek and responsive design, and Framer Motion adds captivating animations that bring every project to life. 
               The project showcases adept usage of image and font optimization, resulting in a super cool and highly responsive experience."
@@ -124,36 +124,26 @@ const projects = () => {
             />
 
             <Project
-              title="Movie Shows"
+              title="MovieMentum"
               img={masthhmovies}
               summary="Delve into my captivating movies app with optimized search experience,seamless navigation and dynamic content display. Highlighted this project in list for its excellence—I employed React js with meticulous documentation ensuring top-notch performance ,
               I showcase the art of modern web development, "
-              link="https://masthmovies-ca.vercel.app/"
+              link="https://moviementum.vercel.app/"
               type="Featuring latest movies"
-              github="https://github.com/Chandru779/moengage_app"
+              github="https://github.com/Chandru779/moviementum"
             />
 
             <Project
-              title="Crypto Screener Application"
+              title="MapTag"
               img={Project1}
-              summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
+              summary="MapTag is a map app where users mark spots they like. The more tags in an area, the hotter it looks on the map,This helps people find busy places easily businesses can use this to boost their visibility.
+The app keeps user info safe and improves based on feedback  "
               link="/"
               type="Featured Project"
               github="/"
             />
 
-            <Project
-              title="Crypto Screener Application"
-              img={Project1}
-              summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
-              link="/"
-              type="Featured Project"
-              github="/"
-            />
+            
           </div>
           <div className="mt-28"></div>
         </Layout>
