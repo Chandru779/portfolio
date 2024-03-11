@@ -75,7 +75,7 @@ const NavBar = () => {
           </nav>
 
           <Link
-            href="/dummy.pdf"
+            href="/public/Resume.pdf"
             target="_blank"
             className="text-sm md:ml-6 px-2 py-1 font-semibold rounded-lg flex items-center bg-gradient-to-br from-dark to-light"
           >
