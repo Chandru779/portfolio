@@ -39,7 +39,7 @@ export default function Home() {
             </p>
             <div className="w-full flex items-center justify-start">
               <Link
-                href="Resume.pdf"
+                href="/resume.pdf"
                 target="_blank"
                 className="flex items-center bg-dark text-light p-2 px-6 
                 rounded-lg text-lg font-semibold border-solid border-transparent hover:bg-light hover:text-dark hover:border-dark border-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
