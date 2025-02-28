@@ -6,7 +6,8 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
 import maptag from "../../public/images/projects/maptag.jpg";
-import masthhmovies from "../../public/images/projects/masthmovie.png";
+import moviementum from "../../public/images/projects/moviementum.png";
+import vidverse from "../../public/images/projects/vidverse.png";
 import portfolio from "../../public/images/projects/portfolio.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -78,7 +79,9 @@ const Project = ({ type, title, summary, img, link, github }) => {
         <span className="text-primary font-normal text-md lg:text-lg">
           {type}
         </span>
-        <p className="font-medium text-md text-dark dark:text-light">{summary}</p>
+        <p className="font-medium text-md text-dark dark:text-light">
+          {summary}
+        </p>
         <div className="w-full flex items-center gap-6 mt-2">
           <Link href={github} target="_blank" className="w-8 dark:text-light">
             <GithubIcon />
@@ -125,7 +128,7 @@ const projects = () => {
 
             <Project
               title="MovieMentum"
-              img={masthhmovies}
+              img={moviementum}
               summary="Delve into my captivating movies app with optimized search experience,seamless navigation and dynamic content display. Highlighted this project in list for its excellence—I employed React js with meticulous documentation ensuring top-notch performance ,
               I showcase the art of modern web development, "
               link="https://moviementum.vercel.app/"
@@ -143,7 +146,15 @@ const projects = () => {
               github="https://github.com/zakriti-official/maptag"
             />
 
-            
+            <Project
+              title="VidVerse"
+              img={vidverse}
+              summary="Videverse is a video listing application similar to a YouTube playlist, featuring a sleek UI with a cool theme. Users can swipe up and down to shuffle order seamlessly. Upon clicking a video, a built-in
+                     media player appears on the side for smooth playback. The intuitive design and enhanced user experience, making content discovery effortless"
+              link="https://vidverse.vercel.app/"
+              type="Video Playlist"
+              github="https://github.com/Chandru779/vidverse"
+            />
           </div>
           <div className="mt-28"></div>
         </Layout>
