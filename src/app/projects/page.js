@@ -7,7 +7,7 @@ import { ContactCTA } from "@/components/sections/contact-cta";
 export const metadata = {
   title: "Projects",
   description:
-    "Explore projects by Chandru Angadi — portfolio, MovieMentum, MapTag, VidVerse, and more.",
+    "Explore projects by Chandrashekar Angadi — Portfolio, MovieMentum, MapTag, VidVerse, and more.",
 };
 
 export default function ProjectsPage() {

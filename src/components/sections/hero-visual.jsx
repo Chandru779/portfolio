@@ -19,7 +19,7 @@ const snippets = [
     file: "stack.ts",
     lines: [
       { parts: [{ t: "const", c: "text-violet-400" }, { t: " stack", c: "text-sky-300" }, { t: " = [", c: "text-foreground/90" }] },
-      { indent: 1, parts: [{ t: '"React", "Next.js", "Vue", "TS"', c: "text-amber-300" }] },
+      { indent: 1, parts: [{ t: '"React", "Next.js", "Node", "TS"', c: "text-amber-300" }] },
       { indent: 0, parts: [{ t: "];", c: "text-foreground/90" }] },
       { parts: [{ t: "stack.map", c: "text-sky-300" }, { t: "(s => ", c: "text-foreground/90" }, { t: "master", c: "text-violet-400" }, { t: "(s));", c: "text-foreground/90" }] },
     ],

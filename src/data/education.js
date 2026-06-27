@@ -1,9 +1,9 @@
 export const educationData = [
   {
-    type: "Computer Science Engineering (B.E)",
+    type: "Bachelor of Engineering — Computer Science & Engineering",
     time: "2018 — 2022",
-    place: "RajaRajeswari College of Engineering (VTU)",
-    info: "Completed a comprehensive curriculum conferred by Visvesvaraya Technological University. Developed a strong foundation in CS principles, algorithms, computer systems engineering, and software engineering methodologies.",
+    place: "RajaRajeswari College of Engineering · Visvesvaraya Technological University, Karnataka",
+    info: "Completed a comprehensive B.E curriculum conferred by Visvesvaraya Technological University. Developed a strong foundation in CS principles, algorithms, computer systems engineering, and software engineering methodologies.",
   },
   {
     type: "Pre University (P.C.M.B)",

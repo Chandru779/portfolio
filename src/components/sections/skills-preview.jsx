@@ -22,7 +22,7 @@ export function SkillsPreview() {
           className="mb-12"
         />
 
-        <StaggerContainer className="grid gap-6 md:grid-cols-3">
+        <StaggerContainer className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {skillCategories.map((category) => (
             <StaggerItem key={category.title}>
               <div className="rounded-2xl border bg-card p-6 shadow-sm">

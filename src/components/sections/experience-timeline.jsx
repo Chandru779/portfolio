@@ -37,9 +37,29 @@ function ExperienceItem({ item, index }) {
           </span>
         </div>
         <p className="mt-2 text-sm text-muted-foreground">{item.address}</p>
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          {item.work}
-        </p>
+        {item.summary && (
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            {item.summary}
+          </p>
+        )}
+        {item.highlights?.length > 0 && (
+          <ul className="mt-4 space-y-2 border-t pt-4">
+            {item.highlights.map((point) => (
+              <li
+                key={point.slice(0, 48)}
+                className="flex gap-2 text-sm leading-relaxed text-muted-foreground"
+              >
+                <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-primary" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        {!item.summary && !item.highlights && item.work && (
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            {item.work}
+          </p>
+        )}
       </div>
     </motion.div>
   );

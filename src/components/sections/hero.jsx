@@ -63,13 +63,11 @@ export function HeroSection() {
 
           <FadeIn delay={0.45}>
             <div className="mt-10 flex flex-wrap gap-2">
-              {["React", "Next.js", "TypeScript", "Vue.js", "Tailwind CSS"].map(
-                (skill) => (
-                  <Badge key={skill} variant="muted">
-                    {skill}
-                  </Badge>
-                )
-              )}
+              {siteConfig.highlightSkills.map((skill) => (
+                <Badge key={skill} variant="muted">
+                  {skill}
+                </Badge>
+              ))}
             </div>
           </FadeIn>
         </div>

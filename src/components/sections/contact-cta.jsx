@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/primitives";
@@ -20,7 +20,7 @@ export function ContactCTA() {
                 Have a role or project in mind?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-                I&apos;m always open to discussing frontend roles, freelance work,
+                I&apos;m open to frontend and full-stack roles, freelance work,
                 or interesting collaborations. Drop me a line — I typically respond
                 within 24 hours.
               </p>
@@ -32,6 +32,12 @@ export function ContactCTA() {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
+                  <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
+                    <Phone className="h-4 w-4" />
+                    {siteConfig.phone}
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" asChild>
                   <a href={siteConfig.resume} target="_blank" rel="noopener noreferrer">
                     Download resume
                   </a>
@@ -39,7 +45,7 @@ export function ContactCTA() {
               </div>
               <p className="mt-6 flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                Based in Bengaluru, India · Open to remote
+                {siteConfig.location} · Open to remote
               </p>
             </div>
           </div>

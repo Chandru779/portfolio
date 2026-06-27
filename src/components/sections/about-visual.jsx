@@ -76,7 +76,7 @@ export function AboutVisual() {
             <Binary className="h-4 w-4 text-primary/50" />
           </div>
           <div className="text-right">
-            <p className="text-lg font-bold text-primary">2+</p>
+            <p className="text-lg font-bold text-primary">{siteConfig.experienceYears}</p>
             <p className="text-[10px] text-muted-foreground">Years building</p>
           </div>
         </div>

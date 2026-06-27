@@ -16,11 +16,11 @@ export const projectsData = [
     title: "MovieMentum",
     type: "Movie Discovery App",
     summary:
-      "A captivating movies app with optimized search, seamless navigation, and dynamic content display — built with React and meticulous attention to performance.",
+      "Movie browsing app with advanced filtering, lazy-loaded images, skeleton loaders, and smooth page-transition animations. Built with React, TypeScript, and the TMDb API — achieving a 35% bundle reduction via optimised image loading.",
     link: "https://moviementum.vercel.app/",
     github: "https://github.com/Chandru779/moviementum",
     image: "/images/projects/moviementum.png",
-    tags: ["React", "API Integration", "Search"],
+    tags: ["React", "TypeScript", "TMDb API", "Framer Motion"],
     featured: true,
   },
   {
@@ -38,13 +38,13 @@ export const projectsData = [
   {
     slug: "vidverse",
     title: "VidVerse",
-    type: "Video Playlist",
+    type: "Video Discovery Platform",
     summary:
-      "A video listing application similar to a YouTube playlist with a sleek UI. Swipe to shuffle, built-in media player, and intuitive design for effortless content discovery.",
+      "Video discovery platform with Next.js SSR for SEO-optimised pages. Features debounced search (60% fewer API calls), drag-and-drop playlist UI with optimistic updates, and sub-200 ms interactions — plus a sleek built-in media player for effortless content discovery.",
     link: "https://vidverse.vercel.app/",
     github: "https://github.com/Chandru779/vidverse",
     image: "/images/projects/vidverse.png",
-    tags: ["React", "Media Player", "UI/UX"],
+    tags: ["Next.js", "TypeScript", "React Query", "Tailwind CSS"],
     featured: false,
   },
 ];
