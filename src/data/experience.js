@@ -1,6 +1,6 @@
 export const experienceData = [
   {
-    position: "Software Engineer (Frontend → Full Stack)",
+    position: "Software Engineer",
     company: "TalkingLands",
     companyLink: "https://talkinglands.com",
     time: "Apr 2022 — Present",
@@ -17,7 +17,7 @@ export const experienceData = [
     ],
   },
   {
-    position: "Full Stack Intern",
+    position: "Software Engineer Intern",
     company: "Tequed Labs",
     companyLink: "https://www.tequedlabs.com/",
     time: "Jul 2021 — Aug 2021",

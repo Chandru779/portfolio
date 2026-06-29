@@ -8,9 +8,40 @@ const snippets = [
   {
     file: "developer.ts",
     lines: [
-      { parts: [{ t: "const", c: "text-violet-400" }, { t: " dev", c: "text-sky-300" }, { t: " = {", c: "text-foreground/90" }] },
-      { indent: 1, parts: [{ t: "name", c: "text-primary" }, { t: ': "', c: "text-foreground/90" }, { t: siteConfig.shortName, c: "text-amber-300" }, { t: '",', c: "text-foreground/90" }] },
-      { indent: 1, parts: [{ t: "role", c: "text-primary" }, { t: ': "', c: "text-foreground/90" }, { t: siteConfig.title, c: "text-amber-300" }, { t: '",', c: "text-foreground/90" }] },
+      {
+        parts: [
+          { t: "const", c: "text-violet-400" },
+          { t: " dev", c: "text-sky-300" },
+          { t: " = {", c: "text-foreground/90" },
+        ],
+      },
+      {
+        indent: 1,
+        parts: [
+          { t: "name", c: "text-primary" },
+          { t: ': "', c: "text-foreground/90" },
+          { t: siteConfig.shortName, c: "text-amber-300" },
+          { t: '",', c: "text-foreground/90" },
+        ],
+      },
+      {
+        indent: 1,
+        parts: [
+          { t: "role", c: "text-primary" },
+          { t: ': "', c: "text-foreground/90" },
+          { t: "Software Engineer", c: "text-amber-300" },
+          { t: '",', c: "text-foreground/90" },
+        ],
+      },
+      {
+        indent: 1,
+        parts: [
+          { t: "location", c: "text-primary" },
+          { t: ': "', c: "text-foreground/90" },
+          { t: "Bengaluru", c: "text-amber-300" },
+          { t: '",', c: "text-foreground/90" },
+        ],
+      },
       { indent: 0, parts: [{ t: "};", c: "text-foreground/90" }] },
     ],
     output: "✓ Profile loaded",
@@ -18,29 +49,91 @@ const snippets = [
   {
     file: "stack.ts",
     lines: [
-      { parts: [{ t: "const", c: "text-violet-400" }, { t: " stack", c: "text-sky-300" }, { t: " = [", c: "text-foreground/90" }] },
-      { indent: 1, parts: [{ t: '"React", "Next.js", "Node", "TS"', c: "text-amber-300" }] },
+      {
+        parts: [
+          { t: "const", c: "text-violet-400" },
+          { t: " stack", c: "text-sky-300" },
+          { t: " = [", c: "text-foreground/90" },
+        ],
+      },
+      { indent: 1, parts: [{ t: '"React",', c: "text-amber-300" }] },
+      { indent: 1, parts: [{ t: '"Next.js",', c: "text-amber-300" }] },
+      { indent: 1, parts: [{ t: '"Node.js",', c: "text-amber-300" }] },
+      { indent: 1, parts: [{ t: '"TypeScript",', c: "text-amber-300" }] },
       { indent: 0, parts: [{ t: "];", c: "text-foreground/90" }] },
-      { parts: [{ t: "stack.map", c: "text-sky-300" }, { t: "(s => ", c: "text-foreground/90" }, { t: "master", c: "text-violet-400" }, { t: "(s));", c: "text-foreground/90" }] },
+      { indent: 0, parts: [] },
+      {
+        indent: 0,
+        parts: [
+          { t: "stack", c: "text-sky-300" },
+          { t: ".map", c: "text-foreground/90" },
+          { t: "((s)", c: "text-foreground/90" },
+          { t: " => ", c: "text-foreground/90" },
+          { t: "master", c: "text-violet-400" },
+          { t: "(s));", c: "text-foreground/90" },
+        ],
+      },
     ],
     output: "✓ 4 skills verified",
   },
   {
     file: "build.sh",
     lines: [
-      { parts: [{ t: "$ ", c: "text-primary" }, { t: "npm run build", c: "text-foreground/90" }] },
-      { parts: [{ t: "→ ", c: "text-muted-foreground" }, { t: "Compiling components...", c: "text-sky-300" }] },
-      { parts: [{ t: "→ ", c: "text-muted-foreground" }, { t: "Optimizing bundle...", c: "text-sky-300" }] },
-      { parts: [{ t: "→ ", c: "text-muted-foreground" }, { t: "Deploy ready 🚀", c: "text-amber-300" }] },
+      {
+        parts: [
+          { t: "$ ", c: "text-primary" },
+          { t: "npm run build", c: "text-foreground/90" },
+        ],
+      },
+      {
+        parts: [
+          { t: "→ ", c: "text-muted-foreground" },
+          { t: "Compiling components...", c: "text-sky-300" },
+        ],
+      },
+      {
+        parts: [
+          { t: "→ ", c: "text-muted-foreground" },
+          { t: "Optimizing bundle...", c: "text-sky-300" },
+        ],
+      },
+      {
+        parts: [
+          { t: "→ ", c: "text-muted-foreground" },
+          { t: "Deploy ready 🚀", c: "text-amber-300" },
+        ],
+      },
     ],
     output: "✓ Build succeeded in 2.4s",
   },
   {
     file: "contact.ts",
     lines: [
-      { parts: [{ t: "await", c: "text-violet-400" }, { t: " connect", c: "text-sky-300" }, { t: "({", c: "text-foreground/90" }] },
-      { indent: 1, parts: [{ t: "email", c: "text-primary" }, { t: ': "', c: "text-foreground/90" }, { t: siteConfig.email.split("@")[0] + "@...", c: "text-amber-300" }, { t: '",', c: "text-foreground/90" }] },
-      { indent: 1, parts: [{ t: "status", c: "text-primary" }, { t: ': "', c: "text-foreground/90" }, { t: "open to work", c: "text-amber-300" }, { t: '"', c: "text-foreground/90" }] },
+      {
+        parts: [
+          { t: "await", c: "text-violet-400" },
+          { t: " connect", c: "text-sky-300" },
+          { t: "({", c: "text-foreground/90" },
+        ],
+      },
+      {
+        indent: 1,
+        parts: [
+          { t: "email", c: "text-primary" },
+          { t: ': "', c: "text-foreground/90" },
+          { t: `${siteConfig.email.split("@")[0]}@...`, c: "text-amber-300" },
+          { t: '",', c: "text-foreground/90" },
+        ],
+      },
+      {
+        indent: 1,
+        parts: [
+          { t: "status", c: "text-primary" },
+          { t: ': "', c: "text-foreground/90" },
+          { t: "open to opportunities", c: "text-amber-300" },
+          { t: '",', c: "text-foreground/90" },
+        ],
+      },
       { indent: 0, parts: [{ t: "});", c: "text-foreground/90" }] },
     ],
     output: "✓ Ready for opportunities",
@@ -55,9 +148,13 @@ function CodeLine({ line, visibleChars }) {
   const fullText = line.parts.map((p) => p.t).join("");
   let charCount = 0;
 
+  if (line.parts.length === 0) {
+    return <div className="min-h-[1.35rem]" aria-hidden />;
+  }
+
   return (
     <div
-      className="flex min-h-[1.35rem] flex-wrap gap-x-0 leading-relaxed"
+      className="min-h-[1.35rem] leading-relaxed"
       style={{ paddingLeft: `${line.indent || 0}rem` }}
     >
       {line.parts.map((part, i) => {
@@ -72,7 +169,7 @@ function CodeLine({ line, visibleChars }) {
         );
       })}
       {visibleChars < fullText.length && (
-        <span className="ml-0.5 inline-block h-3.5 w-0.5 animate-pulse bg-primary" />
+        <span className="ml-px inline-block h-3.5 w-0.5 animate-pulse bg-primary align-middle" />
       )}
     </div>
   );
@@ -128,13 +225,13 @@ export function HeroVisual() {
         <span className="ml-2 font-mono text-[11px] text-muted-foreground">
           {snippet.file}
         </span>
-        <span className="ml-auto rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-medium text-primary">
-          {siteConfig.title}
+        <span className="ml-auto max-w-[9rem] truncate rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[10px] font-medium text-primary">
+          Software Engineer
         </span>
       </div>
 
-      <div className="relative flex flex-1 flex-col p-5 pb-6">
-        <div className="min-h-[148px] space-y-1.5 font-mono text-[11px] sm:text-xs">
+      <div className="relative flex flex-1 flex-col gap-4 p-5 pb-5">
+        <div className="min-h-[168px] space-y-2 overflow-hidden font-mono text-[11px] sm:text-xs">
           {snippet.lines.map((line, index) => {
             const lineLength = line.parts.map((p) => p.t).join("").length;
             const visible =
@@ -154,7 +251,7 @@ export function HeroVisual() {
           })}
         </div>
 
-        <div className="mt-auto min-h-[2rem] border-t border-white/10 pt-3">
+        <div className="mt-auto min-h-[2rem] border-t border-white/10 pt-4">
           <AnimatePresence mode="wait">
             {showOutput && (
               <motion.p
@@ -162,7 +259,7 @@ export function HeroVisual() {
                 initial={{ opacity: 0, y: 4 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
-                className="font-mono text-[11px] text-primary sm:text-xs"
+                className="font-mono text-[11px] leading-relaxed text-primary sm:text-xs"
               >
                 {snippet.output}
               </motion.p>
@@ -170,18 +267,18 @@ export function HeroVisual() {
           </AnimatePresence>
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-3">
-          <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2.5">
+        <div className="grid grid-cols-2 gap-3 pt-1">
+          <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-3">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
               Focus
             </p>
-            <p className="mt-0.5 text-sm font-semibold">UI & Frontend</p>
+            <p className="mt-1 text-sm font-semibold leading-snug">Web & Product</p>
           </div>
-          <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2.5">
+          <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-3">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
               Based in
             </p>
-            <p className="mt-0.5 text-sm font-semibold">Bengaluru</p>
+            <p className="mt-1 text-sm font-semibold leading-snug">Bengaluru</p>
           </div>
         </div>
       </div>

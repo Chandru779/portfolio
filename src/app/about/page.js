@@ -7,7 +7,7 @@ import { ContactCTA } from "@/components/sections/contact-cta";
 export const metadata = {
   title: "About",
   description:
-    "Learn about Chandrashekar Angadi — frontend & full-stack engineer, skills, experience, and education.",
+    "Learn about Chandrashekar Angadi — software engineer, skills, experience, and education.",
 };
 
 export default function AboutPage() {

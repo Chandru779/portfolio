@@ -11,7 +11,7 @@ import { HeroVisual } from "@/components/sections/hero-visual";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[calc(100vh-6rem)] overflow-hidden pt-28 pb-16">
+    <section className="relative overflow-hidden pt-28 pb-6">
       <div className="pointer-events-none absolute inset-0 bg-hero-glow" />
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
 
@@ -19,7 +19,7 @@ export function HeroSection() {
         <div>
           <FadeIn delay={0.1}>
             <Badge variant="outline" className="mb-6 font-mono text-xs">
-              Available for work
+              {siteConfig.availabilityLabel}
             </Badge>
           </FadeIn>
 
@@ -27,7 +27,7 @@ export function HeroSection() {
             <p className="mb-4 text-lg text-muted-foreground">
               Hey, I&apos;m {siteConfig.shortName} 👋
             </p>
-            <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[2.75rem] lg:leading-snug">
               {siteConfig.headline}
             </h1>
           </FadeIn>
@@ -90,7 +90,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
-        className="container mt-12 flex justify-center"
+        className="container mt-6 flex justify-center pb-2"
       >
         <a
           href="#featured-work"

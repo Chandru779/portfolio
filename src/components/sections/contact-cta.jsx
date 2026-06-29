@@ -20,7 +20,7 @@ export function ContactCTA() {
                 Have a role or project in mind?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-                I&apos;m open to frontend and full-stack roles, freelance work,
+                I&apos;m open to software engineering roles, freelance work,
                 or interesting collaborations. Drop me a line — I typically respond
                 within 24 hours.
               </p>

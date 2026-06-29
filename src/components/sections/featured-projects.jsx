@@ -16,12 +16,12 @@ import {
 
 export function FeaturedProjects() {
   return (
-    <section id="featured-work" className="py-24">
+    <section id="featured-work" className="pt-10 pb-24">
       <div className="container">
         <SectionHeading
           eyebrow="Selected Work"
-          title="Projects that showcase craft and impact"
-          description="A curated selection of applications I've built — from interactive UIs to map-based services."
+          title="Projects built for production"
+          description="Real applications I've shipped — from geospatial platforms to polished web experiences."
           className="mb-12"
         />
 

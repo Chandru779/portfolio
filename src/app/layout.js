@@ -26,8 +26,7 @@ export const metadata = {
   keywords: [
     siteConfig.name,
     siteConfig.legalName,
-    "Frontend Engineer",
-    "Full Stack Engineer",
+    "Software Engineer",
     "React",
     "Next.js",
     "Node.js",
