@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <circle cx="90" cy="90" r="90" fill="#10b981"/>
+  <text
+    x="90"
+    y="92"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="62"
+    font-weight="700"
+    fill="#ffffff"
+  >CA</text>
+</svg>

@@ -20,30 +20,45 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: `${siteConfig.shortName} | ${siteConfig.title}`,
-    template: `%s | ${siteConfig.shortName}`,
+    default: siteConfig.metaTitle,
+    template: `%s · ${siteConfig.shortName}`,
   },
-  description: siteConfig.bio,
+  description: siteConfig.metaDescription,
   keywords: [
     siteConfig.name,
     siteConfig.legalName,
+    siteConfig.shortName,
     "Software Engineer",
-    "React",
+    "Full Stack Developer",
+    "React Developer",
     "Next.js",
     "Node.js",
     "TypeScript",
+    "PostgreSQL",
     "Portfolio",
     "Bengaluru",
+    "India",
   ],
-  authors: [{ name: siteConfig.name }],
+  authors: [{ name: siteConfig.name, url: siteConfig.social.linkedin }],
+  creator: siteConfig.name,
   openGraph: {
-    title: `${siteConfig.name} — ${siteConfig.title}`,
-    description: siteConfig.bio,
+    title: siteConfig.metaTitle,
+    description: siteConfig.metaDescription,
+    siteName: `${siteConfig.shortName} — ${siteConfig.tagline}`,
     type: "website",
+    locale: "en_IN",
   },
-  icons: {
-    icon: "/favicon.ico",
+  twitter: {
+    card: "summary",
+    title: siteConfig.metaTitle,
+    description: siteConfig.metaDescription,
+    creator: "@chandru_s_a",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

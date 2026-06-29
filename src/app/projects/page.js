@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { siteConfig } from "@/data/site";
 import {
   ProjectsGrid,
   ProjectsHeader,
@@ -10,8 +11,7 @@ const ContactCTA = dynamic(() =>
 
 export const metadata = {
   title: "Projects",
-  description:
-    "Explore projects by Chandrashekar Angadi — Portfolio, MovieMentum, MapTag, VidVerse, and more.",
+  description: `Projects by ${siteConfig.name} — production web apps including geospatial platforms, SaaS tools, and full-stack applications built with React, Next.js, and Node.js.`,
 };
 
 export default function ProjectsPage() {

@@ -1,18 +1,19 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import { featuredProjects } from "@/data/projects";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   SectionHeading,
   StaggerContainer,
   StaggerItem,
 } from "@/components/motion/primitives";
+import { cn } from "@/lib/utils";
+import { ProjectPreviewImage } from "@/components/sections/project-preview-image";
+import { ProjectTags } from "@/components/sections/project-tags";
 
 export function FeaturedProjects() {
   return (
@@ -34,24 +35,20 @@ export function FeaturedProjects() {
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition-shadow hover:shadow-lg hover:shadow-primary/5"
               >
                 <div className="relative aspect-video overflow-hidden bg-muted">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  <ProjectPreviewImage
+                    project={project}
+                    className={cn(
+                      "transition-transform duration-500",
+                      project.imageFit === "contain"
+                        ? "object-contain p-2"
+                        : "object-cover group-hover:scale-105"
+                    )}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
 
                 <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-3 flex flex-wrap gap-2">
-                    {project.tags.slice(0, 3).map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-[10px]">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
+                  <ProjectTags tags={project.tags} className="mb-3" />
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                   <p className="mt-1 text-sm text-primary">{project.type}</p>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground line-clamp-3">

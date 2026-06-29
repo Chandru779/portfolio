@@ -30,12 +30,6 @@ export function HeroSection() {
 
       <div className="container relative grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
         <div>
-          <FadeIn delay={0.1} immediate>
-            <Badge variant="outline" className="mb-6 font-mono text-xs">
-              {siteConfig.availabilityLabel}
-            </Badge>
-          </FadeIn>
-
           <FadeIn delay={0.15} immediate>
             <p className="mb-4 text-lg text-muted-foreground">
               Hey, I&apos;m {siteConfig.shortName} 👋

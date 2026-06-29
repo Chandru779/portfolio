@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { siteConfig } from "@/data/site";
 import { AboutHero } from "@/components/sections/about-hero";
 
 const SkillsGrid = dynamic(() =>
@@ -23,8 +24,7 @@ const ContactCTA = dynamic(() =>
 
 export const metadata = {
   title: "About",
-  description:
-    "Learn about Chandrashekar Angadi — software engineer, skills, experience, and education.",
+  description: `About ${siteConfig.name} — ${siteConfig.title} in ${siteConfig.location}. Skills, ${siteConfig.experienceYears} years of experience, education, and career journey.`,
 };
 
 export default function AboutPage() {

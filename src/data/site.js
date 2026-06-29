@@ -3,9 +3,14 @@ export const siteConfig = {
   shortName: "Chandru",
   legalName: "Chandrashekar A",
   title: "Software Engineer",
+  tagline: "Building scalable software from idea to production",
+  metaTitle: "Chandru | Software Engineer — React, Next.js & Node.js",
+  metaDescription:
+    "Software Engineer in Bengaluru with 4+ years shipping scalable web apps for 10,000+ users. React, Next.js, TypeScript, Node.js & PostgreSQL. Explore projects, experience & resume.",
+  siteUrl: "https://myportfolio-ca.vercel.app",
   availabilityLabel: "Open to new opportunities",
   headline:
-    "Building scalable, high-performance web apps — from API design to pixel-perfect UI.",
+    "Building scalable, high-performance software — from system design to production delivery.",
   bio: "Software Engineer with 4+ years of experience building applications used by 10,000+ users. Deep expertise in React, Next.js, and TypeScript, with solid proficiency in Node.js, REST APIs, and relational database design. I optimise for performance, clean code, and shipping fast.",
   aboutHeadline: "Building digital experiences with purpose",
   aboutBio: [
