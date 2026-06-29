@@ -1,8 +1,25 @@
+import dynamic from "next/dynamic";
 import { AboutHero } from "@/components/sections/about-hero";
-import { SkillsGrid } from "@/components/sections/skills-grid";
-import { ExperienceTimeline } from "@/components/sections/experience-timeline";
-import { EducationTimeline } from "@/components/sections/education-timeline";
-import { ContactCTA } from "@/components/sections/contact-cta";
+
+const SkillsGrid = dynamic(() =>
+  import("@/components/sections/skills-grid").then((mod) => mod.SkillsGrid)
+);
+
+const ExperienceTimeline = dynamic(() =>
+  import("@/components/sections/experience-timeline").then(
+    (mod) => mod.ExperienceTimeline
+  )
+);
+
+const EducationTimeline = dynamic(() =>
+  import("@/components/sections/education-timeline").then(
+    (mod) => mod.EducationTimeline
+  )
+);
+
+const ContactCTA = dynamic(() =>
+  import("@/components/sections/contact-cta").then((mod) => mod.ContactCTA)
+);
 
 export const metadata = {
   title: "About",

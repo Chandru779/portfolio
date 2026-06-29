@@ -1,8 +1,12 @@
+import dynamic from "next/dynamic";
 import {
   ProjectsGrid,
   ProjectsHeader,
 } from "@/components/sections/projects-grid";
-import { ContactCTA } from "@/components/sections/contact-cta";
+
+const ContactCTA = dynamic(() =>
+  import("@/components/sections/contact-cta").then((mod) => mod.ContactCTA)
+);
 
 export const metadata = {
   title: "Projects",

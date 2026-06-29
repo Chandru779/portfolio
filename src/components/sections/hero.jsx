@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, Download, Mail } from "lucide-react";
@@ -7,7 +8,19 @@ import { siteConfig } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { FadeIn } from "@/components/motion/primitives";
-import { HeroVisual } from "@/components/sections/hero-visual";
+
+const HeroVisual = dynamic(
+  () =>
+    import("@/components/sections/hero-visual").then((mod) => mod.HeroVisual),
+  {
+    loading: () => (
+      <div
+        className="aspect-square w-full rounded-3xl border bg-card"
+        aria-hidden
+      />
+    ),
+  }
+);
 
 export function HeroSection() {
   return (
@@ -17,13 +30,13 @@ export function HeroSection() {
 
       <div className="container relative grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
         <div>
-          <FadeIn delay={0.1}>
+          <FadeIn delay={0.1} immediate>
             <Badge variant="outline" className="mb-6 font-mono text-xs">
               {siteConfig.availabilityLabel}
             </Badge>
           </FadeIn>
 
-          <FadeIn delay={0.15}>
+          <FadeIn delay={0.15} immediate>
             <p className="mb-4 text-lg text-muted-foreground">
               Hey, I&apos;m {siteConfig.shortName} 👋
             </p>
@@ -32,13 +45,13 @@ export function HeroSection() {
             </h1>
           </FadeIn>
 
-          <FadeIn delay={0.25}>
+          <FadeIn delay={0.25} immediate>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               {siteConfig.bio}
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.35}>
+          <FadeIn delay={0.35} immediate>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button size="lg" asChild>
                 <Link href="/projects">
@@ -61,7 +74,7 @@ export function HeroSection() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.45}>
+          <FadeIn delay={0.45} immediate>
             <div className="mt-10 flex flex-wrap gap-2">
               {siteConfig.highlightSkills.map((skill) => (
                 <Badge key={skill} variant="muted">
@@ -72,7 +85,7 @@ export function HeroSection() {
           </FadeIn>
         </div>
 
-        <FadeIn delay={0.2} className="relative mx-auto w-full max-w-md lg:max-w-none">
+        <FadeIn delay={0.2} immediate className="relative mx-auto w-full max-w-md lg:max-w-none">
           <div className="relative mx-auto aspect-square max-w-md pb-2">
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/20 via-transparent to-primary/10 blur-2xl" />
             <motion.div

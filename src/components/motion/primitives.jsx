@@ -12,13 +12,18 @@ export function FadeIn({
   className,
   delay = 0,
   duration = 0.5,
+  immediate = false,
   ...props
 }) {
   return (
     <motion.div
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      {...(immediate
+        ? { animate: "visible" }
+        : {
+            whileInView: "visible",
+            viewport: { once: true, margin: "-80px" },
+          })}
       variants={fadeInUp}
       transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
